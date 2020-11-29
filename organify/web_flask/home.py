@@ -73,9 +73,9 @@ def home():
     """ Prints a Message when / is called """
     if not session:
         users = storage.all(User).values()
-        return render_template('calendar.html', users=users)
+        return render_template('calendar.html')
     else:
-        return redirect(url_for('user-home'))
+        return render_template('calendar.html')
 
 @app.route('/signup')
 def signup():
@@ -83,7 +83,7 @@ def signup():
     if not session:
         return render_template('signup.html')
     else:
-        return redirect(url_for('user-home'))
+        return render_template('signup.html')
 
 @app.route('/contact_us')
 def contact_us():
