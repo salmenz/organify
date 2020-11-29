@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../styles/calendar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script src="../scripts/calendar.js"></script>
+</head>
+<body>
+<div class="date-picker">
+    <p>
+        <span class="date-label">Today's date: </span><span class="today-date"></span> |
+        <span class="date-label">Selected date: </span><span class="selected-date">-</span>
+    </p>
+
+    <div>
+        <div id="date-picker"></div>
+        <div class="list-events-container">
+            <p class="info-text">List of the events for <span class="selected-date">-</span></p>
+            <div class="list-events"></div>
+        </div>
+    </div>
+</div>
+
+<div class="event-form">
+    <p class="info-text">Create event for <span class="selected-date">-</span></p>
+    <label for="event-name">Event Name: </label>
+    <div></div>
+    <input type="text" id="event-name">
+    <div></div>
+    <label for="event-description">Event Description:</label>
+    <div></div>
+    <textarea id="event-description"></textarea>
+    <div></div>
+    <span id="add-event"> Add Event</span>
+</div>
+</body>
+</html>

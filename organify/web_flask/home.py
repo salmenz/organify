@@ -7,10 +7,10 @@ import MySQLdb.cursors
 import re
 from models import storage
 from models.user import User
-from models.post import Post
 from models.question import Question
 from models.answer import Answer
 from models.calendar import Calendar
+from models.activity import Activity
 from web_flask import app
 
 
@@ -51,7 +51,7 @@ def login():
             session['id'] = account['id']
             session['username'] = account['username']
         # Redirect to home page
-            return redirect(url_for('profile', msg=msg))
+            return render_template('questions.html', msg=msg)
         else:
             # Account doesnt exist or username/password incorrect
             msg = 'Incorrect username/password!'
@@ -73,9 +73,7 @@ def home():
     """ Prints a Message when / is called """
     if not session:
         users = storage.all(User).values()
-        posts = storage.all(Post).values()
-        comments = storage.all(Comments).values()
-        return render_template('home.html', users=users, posts=posts, coms=comments)
+        return render_template('calendar.html', users=users)
     else:
         return redirect(url_for('user-home'))
 
@@ -104,35 +102,6 @@ def contact_us_user():
     else:
         return redirect(url_for('contact_us'))
 
-
-
-@app.route('/profile')
-def profile():
-    """profile"""
-    if session:
-        st = storage.all('User').values()
-        id = session['id']
-        lista = []
-        for user in st:
-            if user.id == id:
-                lista = user
-        followers = storage.all('Relation').values()
-        posts = storage.all('Post').values()
-        comments = storage.all('Comments').values()
-        users = storage.all('User').values()
-        return render_template('profile.html', user_id=id, user=lista, followers=followers,
-        posts=posts, comments=comments, users=users)
-    else:
-        return jsonify({"Error": "Not found"})
-
-
-@app.route('/questions')
-def question():
-    """interview"""
-    if session:
-        return render_template('questions.html')
-    else:
-        return jsonify({"Error": "Not found"})
 
 
 

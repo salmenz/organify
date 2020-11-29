@@ -4,7 +4,7 @@ from flask import Flask, render_template
 app = Flask(__name__, static_url_path='', static_folder='static')
 
 
-@app.route('/profile')
+@app.route('/question')
 def hello_hbnb():
     """ Prints a Message when / is called """
     return render_template('questions.html')

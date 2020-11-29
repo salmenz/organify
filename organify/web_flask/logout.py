@@ -7,7 +7,7 @@ app = Flask(__name__, static_url_path='', static_folder='static')
 @app.route('/logout')
 def hello_hbnb():
     """ Prints a Message when / is called """
-    return render_template('home.html')
+    return render_template('login.html')
 
 if __name__ == "__main__":
     """ Main Function """

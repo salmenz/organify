@@ -7,18 +7,10 @@ import MySQLdb.cursors
 import re
 from models import storage
 from models.user import User
-from models.post import Post
-from models.comment import Comments
-from models.interview import Interview
-from models.answer import Answer
-from models.correction import Correction
-from models.category import Category
-from models.subcategory import Subcategory
-from models.sub_follow import Sub_follow
-from models.relation import Relation
-from models.comm_like import Comm_like
-from models.post_like import Post_like
+from models.activity import Activity
 from models.question import Question
+from models.calendar import Calendar
+from models.answer import Answer
 from web_flask import app
 
 
@@ -29,9 +21,9 @@ app.secret_key = 'your secret key'
 
 # Enter your database connection details below
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'job_dev'
-app.config['MYSQL_PASSWORD'] = 'job_dev_pwd'
-app.config['MYSQL_DB'] = 'job_win_db'
+app.config['MYSQL_USER'] = 'cal_dev'
+app.config['MYSQL_PASSWORD'] = 'cal_dev_pwd'
+app.config['MYSQL_DB'] = 'cal_win_db'
 
 # Intialize MySQL
 mysql = MySQL(app)
@@ -56,7 +48,7 @@ def login():
             session['id'] = account['id']
             session['username'] = account['username']
             # Redirect to home page
-            return render_template('profile.html', msg=msg)
+            return render_template('questions.html', msg=msg)
         else:
             # Account doesnt exist or username/password incorrect
             msg = 'Incorrect username/password!'
