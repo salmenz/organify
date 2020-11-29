@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobwin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="../styles/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img class="i" src="../images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup">Sign up</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact_us">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <div id="questions">
+              <ul id="progress">
+              </ul>
+              
+              <div class="question">
+                <div class="content">
+                <h3>Question 1 text</h3>
+                <ol>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer one</li>
+                  
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer two</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer three</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer four</li>
+                </ol>
+                </div>
+              </div>
+              <div class="question">
+                <div class="content">
+                <h3>Question 2 text</h3>
+                <ol>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer one</li>
+                  
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer two</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer three</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer four</li>
+                </ol>
+                </div>
+              </div>
+              <div class="question">
+                <div class="content">
+                <h3>Question 3 text</h3>
+                <ol>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer one</li>
+                  
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer two</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer three</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer four</li>
+                </ol>
+                </div>
+              </div>
+              <div class="question">
+                <div class="content">
+                <h3>Question 4 text</h3>
+                <ol>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer one</li>
+                  
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer two</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer three</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer four</li>
+                </ol>
+                </div>
+              </div>
+              <div class="question">
+                <div class="content">
+                <h3>Question 5 text</h3>
+                <ol>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer one</li>
+                  
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer two</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer three</li>
+                  <li><input type="radio">
+                    <label><span>one</span></label>
+                    Answer four</li>
+                </ol>
+                </div>
+              </div>
+              <span id="error"></span>
+            </div>
+            <br>
+            <div class="buttons">
+              <button id="previous"><</button>
+              <button id="next" class="disabled">></button>
+            </div>
+            <div class="buttons">  
+              <button id="Submit" class="wide disabled">submit</button>
+              <button id="Reset" class="wide">reset</button>
+              
+            </div>
+            </div>
+    </main>
+
+    <footer>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>About</h6>
+                        <p class="text-justify">JobWin <i>"Get Your Dream Job" </i> it's a social networking website
+                            to get ready for your interview. The user can ask whatever he wants to know about the
+                            interviews
+                            questions or even about the company that he will have the interview with and any one can
+                            help he
+                            will reply on his post and also user can have interviews in many domains and it will be
+                            reviewed
+                            by a coach who will correct his mistakes and give him advices and tips</p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Founders</h6>
+                        <ul class="footer-links">
+                            <li><a href="https://www.linkedin.com/in/yasmine-h-a6588614b" target="_blank">Yasmine
+                                    Hamdi</a></li>
+                            <li><a href="https://www.linkedin.com/in/inès-chokri-b247b7175" target="_blank">Ines
+                                    Chokri</a></li>
+                            <li><a href="https://tn.linkedin.com/in/salmen-zouari-7266bb176" target="_blank">Salmen
+                                    Zouari</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="contact_us.html" target="_blank">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                            <a href="#">JobWin</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="https://www.facebook.com/JobWin-101142054972079"
+                                    target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+
+</html>
+<script type="text/javascript" >
+    var lastQ = "This is the last question. Try the submit button.";
+var firstQ = "You are on the first question.";
+var unansweredQ = "Please make a selection.";
+var earlySubmit = "Please complete all questions.";
+$(document).ready( function() {
+
+ $(".question").css({ right: "-705px" });
+
+
+$("#questions div:first").addClass("active").show().animate({right: '0px'});
+
+var questions = $("#questions > div");
+
+for (var i = 0; i < questions.length; i++) {
+  $("#progress").append("<li></li>");
+}
+
+var progressItems = $("#progress li").length;
+    var percent = (1/progressItems)*92;
+    $("#progress li").css("width",percent+"%");
+
+function checkIndex (){
+  
+  var current = $(".active").index();
+  var total = $("#questions > div").length;
+  var currentNum = Number(current);
+  
+  $("#progress li").removeClass("status");
+  $("#progress li").slice(0,currentNum).addClass("status");
+  
+  if (current == total){
+    $("#next").addClass("disabled");
+  }
+  
+  if (current == 1){
+    $("#previous").addClass("disabled");
+  }else{
+    $("#previous").removeClass("disabled");
+  }
+  
+  
+}
+
+checkIndex();
+
+
+function checkChecked() {
+  var current = $(".active ol input:checked");
+  if ($(current).length == 1){
+    $("#next").removeClass("disabled"); 
+  }else{
+    $("#next").addClass("disabled");
+  }
+  
+  if ($(current).length == 1 && $(".active").index() == $("#questions > div").length){
+    $("#submit").removeClass("disabled"); 
+  }
+  
+  if ($(".active").index() == $("#questions > div").length){
+      $("#next").addClass("disabled"); 
+  }
+
+}
+
+$("#next").on("click", function () {
+    $("#error").fadeOut("slow");
+    if ($(this).hasClass("disabled") && $(".active").index() == $("#questions > div").length){
+      $("#error").html(lastQ);
+      $("#error").fadeIn("slow");
+      return false;
+    }else if ($(this).hasClass("disabled")){
+      $("#error").html(unansweredQ);
+      $("#error").fadeIn("slow");
+      return false;
+    }
+
+    var slide = $(".active");
+    var next = $(".active").next(".question");
+    // SLIDE ANIMATION TRANSITION
+    $(slide).animate({left: '-705px'},450).toggleClass("active");
+    $(next).animate({right: '0px'},450).toggleClass("active");
+  
+    function resetDiv() {
+      $(".active").prev(".question").css({position: "absolute",width: "100%", left: "-705px",right:"auto"});
+    }
+
+    setTimeout(resetDiv, 900);
+    
+    checkChecked();
+    checkIndex();
+    
+});
+
+$("#previous").on("click", function () {
+  if ($(this).hasClass("disabled")){
+      $("#error").html(firstQ);
+      $("#error").fadeIn("slow");
+      return false;
+    }
+  /*event.preventDefault()*/
+  var slide = $(".active");
+  var prev = $(".active").prev(".question");
+
+  // SLIDE ANIMATION TRANSITION
+  $(slide).css({left: "auto"}).animate({right: '-705px',left:'auto'},350).toggleClass("active");
+  $(prev).animate({left: '0px'},450).toggleClass("active");
+  $("#error").fadeOut("slow");
+  checkIndex();
+  checkChecked();
+});
+
+$("ol li").on("click", function () {
+    var $this = $(this).find("input:radio");
+    var all = $(this).parent().find("input:radio").not($this);
+    var val = $this.val();
+
+    $this.prop("checked", true);
+
+    if ($this.prop("checked") === true) {
+        all.filter(function () {
+            return $(this).val() === val;
+        }).prop("checked", false);
+    }
+  $("#error").fadeOut("slow");
+
+  checkChecked();
+});
+
+$("#reset").on("click", function () {
+  $("#error").fadeOut("slow");
+  $("#submit").addClass("disabled");
+  $("input:radio").each( function() {
+      $(this).attr('checked',false);
+  });
+  checkChecked();
+   $(".question").removeClass("active").css({right: '-705px',left: 'auto'});
+
+  $("#questions div:first").fadeIn("slow").css({left: "auto"}).animate({right: '0',left:'auto'},350).toggleClass("active");
+  checkIndex();
+});
+
+$(document).keyup(function(e) {
+    /*checkIndex();*/
+    if(e.which == 13 || e.which == 39) {
+       $("#next").trigger('click');
+    }else if(e.which == 37) {
+       $("#previous").trigger('click');
+    }
+});
+
+
+$("#submit").on("click", function () {
+if ($(this).hasClass("disabled")){
+      $("#error").html(earlySubmit);
+      $("#error").fadeIn("slow");
+      return false;
+    }else{
+      alert("This will eventually do something awesome!");
+    }
+});
+});
+</script>

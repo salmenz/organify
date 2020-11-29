@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobwin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="../styles/style1.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="../scripts/interviews.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="user-home"><img class="i" src="../images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="user-home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile">Profile</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="c-add">Add Category</a>
+                                <a class="dropdown-item" href="c-del">Delete Category</a>
+                                <a class="dropdown-item" href="c-upd">Update Category</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subcategories</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="s-add">Add Subcategory</a>
+                                <a class="dropdown-item" href="s-del">Delete Subcategory</a>
+                                <a class="dropdown-item" href="s-upd">Update Subcategory</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Questions</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="q-add">Add Question</a>
+                                <a class="dropdown-item" href="q-del">Delete Question</a>
+                                <a class="dropdown-item" href="q-upd">Update Question</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a-contact_us">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-3">
+                    <div class="well well-sm">
+                        <fieldset>
+                            <legend class="text-center">Subcategories</legend>
+
+                            <table id="example" class="table table-striped table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Category</th>
+                                        <th>Subcategory</th>
+                                        <th>Created at</th>
+                                        <th>Updated at</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>IT</td>
+                                        <td>ML</td>
+                                        <td>2020/06/17</td>
+                                        <td>2020/06/17</td>
+                                        <td><button id="bcc">Delete</button></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>IT</td>
+                                        <td>ML</td>
+                                        <td>2020/06/17</td>
+                                        <td>2020/06/17</td>
+                                        <td><button id="bcc">Delete</button></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>IT</td>
+                                        <td>ML</td>
+                                        <td>2020/06/17</td>
+                                        <td>2020/06/17</td>
+                                        <td><button id="bcc">Delete</button></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>IT</td>
+                                        <td>ML</td>
+                                        <td>2020/06/17</td>
+                                        <td>2020/06/17</td>
+                                        <td><button id="bcc">Delete</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>About</h6>
+                        <p class="text-justify">JobWin <i>"Get Your Dream Job" </i> it's a social networking website
+                            to get ready for your interview. The user can ask whatever he wants to know about the
+                            interviews
+                            questions or even about the company that he will have the interview with and any one can
+                            help he
+                            will reply on his post and also user can have interviews in many domains and it will be
+                            reviewed
+                            by a coach who will correct his mistakes and give him advices and tips</p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Founders</h6>
+                        <ul class="footer-links">
+                            <li><a href="https://www.linkedin.com/in/yasmine-h-a6588614b" target="_blank">Yasmine
+                                    Hamdi</a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/inès-chokri-b247b7175" target="_blank">Ines
+                                    Chokri</a>
+                            </li>
+                            <li><a href="https://tn.linkedin.com/in/salmen-zouari-7266bb176" target="_blank">Salmen
+                                    Zouari</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="contact_us.html" target="_blank">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                            <a href="#">JobWin</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="https://www.facebook.com/JobWin-101142054972079"
+                                    target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+
+</html>
